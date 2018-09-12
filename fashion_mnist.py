@@ -21,7 +21,7 @@ model.add(tf.keras.layers.Dense(10, activation=tf.nn.softmax))
 model.compile(optimizer="adam", loss="sparse_categorical_crossentropy",
              metrics=["accuracy"])
 
-model.fit(np.array(img), np.array(ans), epochs=3)
+model.fit(img, ans, epochs=3)
 
 model.save("fashion_mnist.model")
 """
